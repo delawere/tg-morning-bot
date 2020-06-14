@@ -130,7 +130,7 @@ def callback_timer(bot, update, job_queue):
     }
 
     bot.send_message(chat_id=update.message.chat_id, text='Starting!')
-    job_queue.run_daily(message_handler, days=(0, 1, 2, 3, 4, 5, 6),time = time(hour = 12, minute = 14, second = 30, tzinfo=d_aware.tzinfo), context=context)
+    job_queue.run_daily(message_handler, days=(0, 1, 2, 3, 4, 5, 6),time = time(hour = 9, minute = 0, second = 0, tzinfo=d_aware.tzinfo), context=context)
 
 def stop_timer(bot, update, job_queue):
     bot.send_message(chat_id=update.message.chat_id, text='Stoped!')
